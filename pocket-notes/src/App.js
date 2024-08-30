@@ -24,24 +24,26 @@ function App() {
     };
   }, [setSelected]);
 
+  useEffect(() => {
+    console.log("Selected value:", selected); 
+  }, [selected]);
+
   return (
     <Provider>
       <div className="App">
-      {screenSize > 500 ? (
-  <DesktopView />
-) : (
-  <Router>
-    <Routes>
-      <Route path="/" element={<DesktopView />} />
-      <Route path="/notes" element={<MobileView />} />
-    </Routes>
-  </Router>
-)}
+        {screenSize > 500 ? (
+          <DesktopView selected={selected} /> 
+        ) : (
+          <Router>
+            <Routes>
+              <Route path="/" element={<DesktopView selected={selected} />} />
+              <Route path="/notes" element={<MobileView />} />
+            </Routes>
+          </Router>
+        )}
       </div>
     </Provider>
   );
 }
 
 export default App;
-
-

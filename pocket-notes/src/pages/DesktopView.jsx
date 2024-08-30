@@ -1,7 +1,7 @@
 import React from 'react'
-import Notes from '../componets/NotesDesktop/Notes'
+import Notes from '../components/NotesDesktop/Notes'
 
-function DesktopView() {
+function Desktopview() {
   return (
     <div>
       <Notes />
@@ -9,4 +9,4 @@ function DesktopView() {
   )
 }
 
-export default DesktopView
+export default Desktopview

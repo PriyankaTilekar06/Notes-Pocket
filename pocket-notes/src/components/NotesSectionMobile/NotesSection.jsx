@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './NotesSection.module.css';
-import sendImage from '../../assets/send.png';
+import sendImage from '../../assets/send.png'
 import formatDateTime from '../../utils/formatDateAndTime';
 
 function NotesSection({ selectedMessage }) {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Notes.module.css';
-import pocketNotesImage from '../../assets/image.png';
+import pocketNotesImage from '../../assets/image.png'
 import CreatePopup from '../CreatePopupMobile/CreatePopup';
 import NotesSection from '../NotesSectionMobile/NotesSection';
 

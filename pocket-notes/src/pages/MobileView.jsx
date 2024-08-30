@@ -1,5 +1,5 @@
 import React from 'react'
-import Notes from '../componets/NotesMobile/Notes'
+import Notes from '../components/NotesMobile/Notes'
 
 function MobileView() {
   return (

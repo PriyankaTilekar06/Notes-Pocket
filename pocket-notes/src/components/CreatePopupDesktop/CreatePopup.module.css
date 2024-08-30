@@ -1,0 +1,128 @@
+.blur {
+    filter: blur(500px); 
+    transition: filter 0.3s ease;
+    pointer-events: none;
+    position: relative;
+  }
+
+.plus{
+    width: 75px;
+    height: 75px;
+    margin-top: 410px;
+    background: #16008B;
+    font-family: Roboto;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    position: fixed; 
+    bottom: 20px;
+}
+
+.container{
+    background-color: #FFFFFF;
+    padding: 20px;
+    width: 600px;
+    border-radius: 6px;
+    z-index: 1000;
+}
+
+.heading{
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1px;
+    letter-spacing: 0.035em;
+    text-align: left;
+}
+
+.name{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1px;
+    letter-spacing: 0.035em;
+    text-align: left;
+}
+
+.input{
+    width: 300px;
+    height: 35px;
+    border-radius: 22px;
+    border: 2px solid #CCCCCC;
+    margin-left: 30px;
+}
+
+::placeholder{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1px;
+    letter-spacing: 0.035em;
+    text-align: left;
+    color: #979797;
+}
+
+.color{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1px;
+    letter-spacing: 0.035em;
+    text-align: left;
+}
+
+.create{
+    width: 154px;
+    height: 38px;
+    margin-left: 450px;
+    background-color: #001F8B;
+    border-radius: 11px;
+    border: none;
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.colorSection {
+    display: flex;
+    align-items: center; 
+    margin-top: 15px;
+  }
+  
+  .color {
+    margin-right: 10px; 
+  }
+  
+  .colorOptions {
+    display: flex;
+    gap: 10px; 
+    margin-left: 20px;
+  }
+  
+  .colorOption {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 2px solid transparent; 
+  }
+  
+  .checkmark {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+

@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import CreaatePopup from './components/CreaatePopup';
+import CreaatePopup from './components/CreatePopupDesktop/CreatePopup';
 
 function App() {
   return (

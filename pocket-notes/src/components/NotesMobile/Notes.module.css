@@ -1,0 +1,176 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.left{
+    width: 30%;
+    height: 100vh;
+    overflow-y: scroll;
+    position: relative;
+}
+
+
+.text{
+    width: 30%;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 76px;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.messageWrapper {
+    position: absolute; 
+    display: flex;
+    align-items: center; 
+    margin-left: 20px; 
+  }
+
+.circle{
+    width: 55px;
+    height: 55px;
+    margin-left: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 22.59px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    position: absolute; 
+    z-index: 10;
+    color: #FFFF;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+
+}
+
+.right{
+    width: 70%;
+    height: 100vh;
+    background-color:#DAE5F5;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    font-family: Roboto;
+    justify-content: center;
+    align-items: center;
+}
+
+.para{
+    max-width: 65%;
+    color: #292929;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+}
+
+.img{
+    width: 500px;
+}
+
+.messageText{
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-align: right;
+    position: relative;
+    margin-left: 150px;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+}
+
+.messageWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer; 
+}
+
+.messageWrapper:hover .circle {
+    background-color: #2F2F2F; 
+    transform: scale(1.1);
+}
+
+.messageWrapper:hover {
+    background: #2F2F2F2B;
+    transform: translateY(-5px);
+
+}
+
+.deleteButton {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: burlywood;
+    font-family: Roboto;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none; 
+}
+
+.messageWrapper:hover .deleteButton {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .text {
+        font-size: 40px;
+    }
+    
+    .left{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .messageWrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .circle {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .messageText {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    .deleteButton {
+        font-size: 14px;
+    }
+
+    .plus {
+        font-size: 25px;
+    }
+
+    .left{
+        display: block;
+    }
+    
+    
+}
